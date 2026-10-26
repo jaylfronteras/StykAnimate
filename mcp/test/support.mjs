@@ -6,6 +6,8 @@ import {InMemoryTransport} from '@modelcontextprotocol/sdk/inMemory.js';
 import {createServer} from '../src/server.js';
 import {resetStore} from '../src/session.js';
 
+// Also set here so `node --test test/<file>.test.mjs` stays on the rasterizer
+// when the npm script's --import preload is not used.
 process.env.STYK_RENDER = 'software';
 
 export async function workspace() {

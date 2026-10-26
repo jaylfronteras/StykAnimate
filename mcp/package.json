@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "node src/index.js",
-    "test": "STYK_RENDER=software node --test --test-concurrency=1 test/*.test.mjs"
+    "test": "node --import ./test/env.mjs --test --test-concurrency=1 test/*.test.mjs"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.21.1",
