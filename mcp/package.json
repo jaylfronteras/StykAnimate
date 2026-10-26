@@ -1,0 +1,25 @@
+{
+  "name": "stykanimate-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MCP server that drives StykAnimate: build scenes, edit projects, design figures, preview, and export.",
+  "license": "GPL-3.0-or-later",
+  "type": "module",
+  "bin": {
+    "stykanimate-mcp": "./src/index.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --import ./test/env.mjs --test --test-concurrency=1 test/*.test.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.21.1",
+    "zod": "3.25.76"
+  },
+  "optionalDependencies": {
+    "playwright": "1.63.0"
+  }
+}
