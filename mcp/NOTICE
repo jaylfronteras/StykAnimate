@@ -1,0 +1,27 @@
+StykAnimate MCP
+Copyright (C) 2026 the StykAnimate contributors
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+The StykAnimate application this server drives is by Filippo Calippo
+and contributors, GPL-3.0-or-later:
+https://github.com/filippocalippo/StykAnimate-App
+
+Scene compilation, the pose vocabulary, and the preview/export shape
+were adapted from ideas in that project's pull request 21 by
+mashhoorahdal. They were reimplemented against this tree; the pose
+angles are not a verbatim copy.
+
+The session model (plain Node, editor commands, undo, and tests around
+the tools) follows ideas from https://github.com/ghassenTn/stykanimate-mcp
+(commit 2ca2f10). This package is not a fork of that repository.
+
+Animations and figures a person makes with these tools are their own work.
